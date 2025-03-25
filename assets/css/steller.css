@@ -73,6 +73,42 @@ body {
 [tabindex="-1"]:focus {
   outline: 0 !important;
 }
+/* Make cards circular and adjust dimensions */
+.custom-card.rounded-circle {
+  width: 200px;       /* Must match height for a perfect circle */
+  height: 200px;      /* Must match width for a perfect circle */
+  border-radius: 50% !important;
+  display: flex;
+  align-items: center; /* Vertically centers content */
+  justify-content: center; /* Horizontally centers content */
+  margin: 0 auto;     /* Centers the circle in the column */
+}
+
+.custom-card.rounded-circle .card-body {
+  padding: 0;         /* Remove default padding (optional) */
+  text-align: center; /* Ensures text alignment */
+}
+
+/* Center icon and text in a column layout */
+.custom-card.rounded-circle .card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Horizontally centers child elements */
+  justify-content: center; /* Vertically centers child elements */
+  height: 100%;       /* Ensures full coverage inside the circle */
+}
+
+/* Adjust icon spacing */
+.custom-card.rounded-circle .icon {
+  font-size: 2rem;
+  margin-bottom: 10px; /* Adds space between icon and text */
+}
+
+/* Adjust heading margins */
+.custom-card.rounded-circle h5 {
+  font-size: 1rem;
+  margin: 0;          /* Removes default margins */
+}
 
 hr {
   box-sizing: content-box;
