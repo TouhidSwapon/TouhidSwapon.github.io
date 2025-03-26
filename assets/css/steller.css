@@ -110,6 +110,28 @@ body {
   margin: 0;          /* Removes default margins */
 }
 
+/* Style for the promotion arrows */
+.promotion-arrow {
+  text-align: center; 
+  margin-top: -10px; /* Adjust positioning */
+}
+
+.promotion-arrow i {
+  font-size: 2rem; /* Adjust size */
+  color: #007bff; /* Adjust color to match your design */
+}
+
+/* Optional: Add space between arrows and cards */
+.custom-card {
+  position: relative;
+}
+
+/* Adjustments for a smooth layout */
+.custom-card + .promotion-arrow {
+  margin-top: 20px;
+}
+
+
 hr {
   box-sizing: content-box;
   height: 0;
