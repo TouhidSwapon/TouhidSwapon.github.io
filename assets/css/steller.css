@@ -157,6 +157,8 @@ p {
   margin-bottom: 0 !important;
 }
 .card-body a { color: blue; }
+a { color: #007bff !important; }
+a:hover { color: #0056b3 !important; }
 
 abbr[title], 
 abbr[data-original-title] {
