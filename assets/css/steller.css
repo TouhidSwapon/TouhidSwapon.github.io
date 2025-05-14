@@ -17,7 +17,7 @@
   --purple: #A16AE8;
   --pink: #FC8BC0;
   --red: #F85C70;
-  --orange: #FF8882;
+  --orange: #79A9F5;
   --yellow: #FAD02C;
   --green: #A3C14A;
   --teal: #20c997;
@@ -140,13 +140,23 @@ hr {
 
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
-  margin-bottom: 0.5rem;
+ margin-bottom: 0.5rem;
 }
 
 p {
   margin-top: 0;
   margin-bottom: 1rem;
 }
+/* Specific spacing for circular card paragraphs */
+.custom-card.rounded-circle .card-body p {
+  margin-bottom: 0.25rem !important; /* Adjust this value as needed */
+  line-height: 1.2;
+}
+
+.custom-card.rounded-circle .card-body p:last-child {
+  margin-bottom: 0 !important;
+}
+.card-body a { color: blue; }
 
 abbr[title],
 abbr[data-original-title] {
