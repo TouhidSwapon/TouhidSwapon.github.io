@@ -17,7 +17,7 @@
   --purple: #A16AE8;
   --pink: #FC8BC0;
   --red: #F85C70;
-  --orange: #79A9F5;
+  --orange: #FF8882;
   --yellow: #FAD02C;
   --green: #A3C14A;
   --teal: #20c997;
@@ -158,7 +158,7 @@ p {
 }
 .card-body a { color: blue; }
 
-abbr[title],
+abbr[title], 
 abbr[data-original-title] {
   text-decoration: underline;
   -webkit-text-decoration: underline dotted;
