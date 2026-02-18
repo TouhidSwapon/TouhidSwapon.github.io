@@ -40,51 +40,57 @@
     });
   }
 
-  function setupActiveNav() {
-    var sections = Array.prototype.slice.call(document.querySelectorAll("section[id]"));
-    var linksById = {};
+  function setupActiveNav(nav) {
+    var navLinks = Array.prototype.slice.call(document.querySelectorAll('.nav-link[href^="#"]'));
+    if (!navLinks.length) return;
 
-    sections.forEach(function (section) {
-      var link = document.querySelector('.nav-link[href="#' + section.id + '"]');
-      if (link) linksById[section.id] = link;
+    var homeLink = document.querySelector('.nav-link[href="#home"]');
+    var linksById = {};
+    var sections = [];
+
+    navLinks.forEach(function (link) {
+      var hash = link.getAttribute("href");
+      if (!hash || hash === "#home") return;
+
+      var target = document.querySelector(hash);
+      if (target) {
+        linksById[target.id] = link;
+        sections.push(target);
+      }
     });
 
     function setActive(id) {
-      Object.keys(linksById).forEach(function (key) {
-        linksById[key].classList.toggle("active", key === id);
+      navLinks.forEach(function (link) {
+        link.classList.remove("active");
       });
+
+      if (id === "home" && homeLink) {
+        homeLink.classList.add("active");
+        return;
+      }
+
+      if (linksById[id]) {
+        linksById[id].classList.add("active");
+      }
     }
 
-    if ("IntersectionObserver" in window) {
-      var mostVisible = { id: "", ratio: 0 };
-      var observer = new IntersectionObserver(function (entries) {
-        entries.forEach(function (entry) {
-          if (entry.isIntersecting && entry.intersectionRatio >= mostVisible.ratio) {
-            mostVisible = { id: entry.target.id, ratio: entry.intersectionRatio };
-          }
-        });
-        if (mostVisible.id) setActive(mostVisible.id);
-      }, {
-        threshold: [0.2, 0.45, 0.7],
-        rootMargin: "-18% 0px -56% 0px"
-      });
+    function onScroll() {
+      var offset = (nav ? nav.offsetHeight : 84) + 24;
+      var current = "home";
+      var marker = window.pageYOffset + offset;
 
       sections.forEach(function (section) {
-        observer.observe(section);
+        if (marker >= section.offsetTop) {
+          current = section.id;
+        }
       });
-    } else {
-      function onScroll() {
-        var current = sections[0] ? sections[0].id : "";
-        sections.forEach(function (section) {
-          if (window.pageYOffset >= section.offsetTop - 120) {
-            current = section.id;
-          }
-        });
-        setActive(current);
-      }
-      window.addEventListener("scroll", onScroll, { passive: true });
-      onScroll();
+
+      setActive(current);
     }
+
+    window.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener("resize", onScroll);
+    onScroll();
   }
 
   function setupReveals() {
@@ -212,7 +218,7 @@
     var nav = document.querySelector(".navbar");
     updateNavHeightVar(nav);
     setupSmoothNav(nav);
-    setupActiveNav();
+    setupActiveNav(nav);
     setupReveals();
     setupLightbox();
 
