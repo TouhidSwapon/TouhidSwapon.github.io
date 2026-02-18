@@ -108,15 +108,16 @@ p {
 }
 
 .header {
-  min-height: clamp(620px, 88vh, 860px);
+  min-height: auto;
   height: auto;
   border-bottom: 0;
   padding-top: calc(var(--pm-nav-h) + 16px);
-  padding-bottom: clamp(1rem, 2.4vw, 1.9rem);
+  padding-bottom: 0.4rem;
 }
 
 .header .container {
   position: relative;
+  min-height: clamp(460px, 66vh, 620px);
   gap: clamp(1rem, 3vw, 2.25rem);
   align-items: center;
   padding: clamp(1.2rem, 3vw, 2.4rem);
@@ -217,16 +218,9 @@ p {
   max-width: 1080px;
 }
 
-#about.section.mt-3 {
-  margin-top: 0 !important;
-}
-
-#about .container.mt-5 {
-  margin-top: 0 !important;
-}
-
 #about.section {
-  padding-top: clamp(1.4rem, 3vw, 2.4rem);
+  padding-top: 0.6rem;
+  padding-bottom: clamp(2.2rem, 5vw, 4rem);
 }
 
 #about .row {
@@ -238,11 +232,12 @@ p {
   overflow: hidden;
 }
 
-#about .col-md-3 {
+#about .col-md-4 {
   background: linear-gradient(160deg, rgba(255, 122, 87, 0.1), rgba(255, 255, 255, 0.5));
-  padding: clamp(1.2rem, 3vw, 2rem);
-  display: grid;
-  place-items: center;
+  padding: 0;
+  display: flex;
+  align-items: stretch;
+  justify-content: stretch;
 }
 
 #about .pl-md-4 {
@@ -251,9 +246,14 @@ p {
 
 #about .img-thumbnail {
   border: 0;
-  border-radius: 20px;
-  width: min(100%, 240px);
-  box-shadow: 0 18px 32px rgba(30, 41, 59, 0.14);
+  border-radius: 0;
+  width: 100%;
+  max-width: none;
+  height: 100%;
+  min-height: clamp(280px, 44vw, 430px);
+  object-fit: cover;
+  margin-bottom: 0 !important;
+  box-shadow: none;
 }
 
 #about .title {
@@ -643,10 +643,11 @@ body.lightbox-open {
 
   .header {
     min-height: auto;
-    padding-bottom: 0.75rem;
+    padding-bottom: 0.5rem;
   }
 
   .header .container {
+    min-height: auto;
     border-radius: 22px;
   }
 
@@ -663,8 +664,8 @@ body.lightbox-open {
     text-align: left !important;
   }
 
-  #about .col-md-3 {
-    padding-bottom: 0;
+  #about .col-md-4 {
+    min-height: auto;
   }
 
   .contact .form {
@@ -704,6 +705,10 @@ body.lightbox-open {
 
   #about .pl-md-4 {
     padding-top: 1rem !important;
+  }
+
+  #about .img-thumbnail {
+    min-height: 250px;
   }
 
   #service .container {
