@@ -492,10 +492,13 @@ p {
 }
 
 .img-wrapper .overlay .overlay-infos h5 {
+  color: #f8fbff !important;
   font-size: 0.74rem;
+  font-weight: 600;
   line-height: 1.35;
   margin: 0;
   letter-spacing: 0.01em;
+  text-shadow: 0 1px 10px rgba(0, 0, 0, 0.6);
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
