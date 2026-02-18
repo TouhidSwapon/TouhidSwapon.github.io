@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
     <!-- Bootstrap + Steller main styles -->
 	<link rel="stylesheet" href="assets/css/steller.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Manrope:wght@400;500;600&display=swap">
+    <link rel="stylesheet" href="assets/css/premium-overrides.css">
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
 
@@ -28,19 +30,19 @@
                         <a class="nav-link" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="#experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Awards</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#community_activities">Community Activities</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#experience">Experience</a>
-                    </li>   
-                    <li class="nav-item">
                         <a class="nav-link" href="#service">Service</a>
-                    </li>                   
-                     <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">Awards</a>
-                    </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#community_activities">Community Activities</a>
                     </li>
                     <!-- <li class="nav-item">
                         <a class="nav-link" href="#testmonial">Testmonial</a>
@@ -103,80 +105,7 @@
     </header>
     <!-- End of Page Header -->
     
-    <!-- About section -->
-    <section id="about" class="section mt-3">
-        <div class="container mt-5">
-            <div class="row text-center text-md-left">
-                <div class="col-md-3">
-                    <img src="assets/imgs/avatar.jpg" alt="" class="img-thumbnail mb-4">
-                </div>
-                <div class="pl-md-4 col-md-9">
-                    <h6 class="title">Touhid Swapon</h6>
-                    <!-- <p class="subtitle">UI/UX Designer</p> -->
-                    <p>With 10+ years in mobile app development (Android → cross-platform), I blend technical depth with leadership—guiding teams, driving strategic innovation and mentoring professionals stuck in career confusion. I specialize in helping lost talents find clarity, upskill strategically, and transition into impactful tech roles.<br><br>Passionate about ethical tech, privacy-aware solutions, and community building.<br><br>Beyond code: Fitness enthusiast, voice-over artist, and advocate for discipline fueling excellence. ECE background, lifelong learner, and aspiring tech leader focused on purposeful impact.</p>
-                    <!-- <button class="btn btn-primary rounded mt-3">DOWNLOAD CV</button>                    -->
-                </div>
-            </div>
-        </div>
-    </section>
- 
-    <!-- Service section -->
-<section id="service" class="section">
-    <div class="container text-center">
-        <h6 class="subtitle">Service</h6>
-        <h6 class="section-title mb-4">What I Do</h6>
-        <p class="mb-5 pb-4">I offer professional services that leverage my technical expertise and communication skills to help others grow and create impactful solutions.</p>
-
-        <div class="row">
-            <!-- Service 1 -->
-            <div class="col-sm-6 col-md-3 mb-4">
-                <div class="custom-card card border">
-                    <div class="card-body">
-                        <i class="icon ti-user"></i>  <!-- Changed icon to user for mentoring -->
-                        <h5>Mentorship</h5>
-                        <p class="small text-muted">Guiding aspiring individuals</p>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Service 2 -->
-            <div class="col-sm-6 col-md-3 mb-4">
-                <div class="custom-card card border">
-                    <div class="card-body">
-                        <i class="icon ti-microphone"></i>  <!-- Microphone icon for hosting -->
-                        <h5>Event Host</h5>
-                        <p class="small text-muted">Tech conferences & community events</p>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Service 3 -->
-            <div class="col-sm-6 col-md-3 mb-4">
-                <div class="custom-card card border">
-                    <div class="card-body">
-                        <i class="icon ti-volume"></i>  <!-- Volume icon for voice work -->
-                        <h5>Voice Over</h5>
-                        <p class="small text-muted">Professional narration services</p>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Service 4 -->
-            <div class="col-sm-6 col-md-3 mb-4">
-                <div class="custom-card card border">
-                    <div class="card-body">
-                        <i class="icon ti-mobile"></i>  <!-- Mobile icon for app dev -->
-                        <h5>Mobile App Development</h5>
-                        <p class="small text-muted">Android & cross-platform solutions</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-    <!-- End of Sectoin -->
-
-    <section id="experience" class="section">
+    <section id="experience" class="section" data-reveal>
         <div class="container">
           <div class="row">
       
@@ -274,52 +203,318 @@
         </div>
       </section>
       
-      <style>
-      .col-md-6 {
-  text-align: center;
-}
-
-.timeline {
-  list-style: none;
-  padding: 0;
-  position: relative;
-  margin: 0 auto;
-  display: inline-block;
-  text-align: left; /* Keep timeline items left-aligned while container is centered */
-  max-width: 500px;
-}
-
-      .timeline li {
-        margin-bottom: 30px;
-        position: relative;
-        padding-left: 20px;
-        border-left: 3px solid #3498db;
-      }
-      .timeline li::before {
-        content: "";
-        position: absolute;
-        left: -8px;
-        top: 5px;
-        width: 15px;
-        height: 15px;
-        background-color: #3498db;
-        border-radius: 50%;
-      }
-      .timeline li h5 {
-        font-size: 1.1rem;
-        margin-bottom: 5px;
-      }
-      .timeline li span {
-        font-weight: normal;
-        font-size: 0.9rem;
-        color: #666;
-        margin-left: 10px;
-      }
-      </style>
-
-
 <!-- End of Section -->
+    <!-- Portfolio section -->
+    <section id="portfolio" class="section" data-reveal>
+        <div class="container text-center">
+            <!-- <h6 class="subtitle">Community Activities & Awards</h6> -->
+            <h6 class="section-title mb-4">Awards</h6>
+            <!-- <p class="mb-5 pb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In alias dignissimos. <br> rerum commodi corrupti, temporibus non quam.</p> -->
 
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="img-wrapper" data-reveal data-lightbox data-caption="">
+                        <img src="assets/imgs/award/Speaker Appreciation in Mobicon Event.jpg" alt="">
+                        <div class="overlay">
+                            <div class="overlay-infos">
+                                <h5>Speaker Appreciation in Mobicon Event</h5>
+                                <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
+                                <a href="javascript:void(0)"><i class="ti-link"></i></a>
+                            </div>  
+                        </div>
+                    </div>
+                    <div class="img-wrapper" data-reveal data-lightbox data-caption="">
+                        <img src="assets/imgs/award/Receiving 1st position prize from District Commisionar.jpg" alt="">
+                        <div class="overlay">
+                            <div class="overlay-infos">
+                                <h5>Receiving app development wining prize from District Commisionar</h5>
+                                <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
+                                <a href="javascript:void(0)"><i class="ti-link"></i></a>
+                            </div>                              
+                        </div>
+                    </div>                  
+                </div>
+                <div class="col-sm-4">
+                    <div class="img-wrapper" data-reveal data-lightbox data-caption="">
+                        <img src="assets/imgs/award/Moment of Receiving World Summit Award in Delhi, India.jpg" alt="">
+                        <div class="overlay">
+                            <div class="overlay-infos">
+                                <h5>Moment of Receiving World Summit Award in Delhi, India</h5>
+                                <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
+                                <a href="javascript:void(0)"><i class="ti-link"></i></a>
+                            </div>  
+                        </div>
+                    </div>
+                     <div class="img-wrapper" data-reveal data-lightbox data-caption="">
+                        <img src="assets/imgs/speaking/With honourable speaker.jpg" alt="">
+                        <div class="overlay">
+                            <div class="overlay-infos">
+                                <h5>Moment of Receiving World Summit Award in Delhi, India</h5>
+                                <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
+                                <a href="javascript:void(0)"><i class="ti-link"></i></a>
+                            </div>  
+                        </div>
+                    </div>
+                    <div class="img-wrapper" data-reveal data-lightbox data-caption="">
+                        <img src="assets/imgs/award/Receiving best host and volunteer award.jpg" alt="">
+                        <div class="overlay">
+                            <div class="overlay-infos">
+                                <h5>Receiving best volunteer award</h5>
+                                <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
+                                <a href="javascript:void(0)"><i class="ti-link"></i></a>
+                            </div>                              
+                        </div>
+                    </div>                  
+                </div>
+                <div class="col-sm-4">
+                    <div class="img-wrapper" data-reveal data-lightbox data-caption="">
+                        <img src="assets/imgs/award/Speaker Appreciation in Mobicon Event.jpg" alt="">
+                        <div class="overlay">
+                            <div class="overlay-infos">
+                                <h5>A token of Appreciation</h5>
+                                <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
+                                <a href="javascript:void(0)"><i class="ti-link"></i></a>
+                            </div>  
+                        </div>
+                    </div>
+                    <div class="img-wrapper" data-reveal data-lightbox data-caption="">
+                        <img src="assets/imgs/award/VR App Award.jpg" alt="">
+                        <div class="overlay">
+                            <div class="overlay-infos">
+                                <h5>VR App Award</h5>
+                                <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
+                                <a href="javascript:void(0)"><i class="ti-link"></i></a>
+                            </div>                              
+                        </div>
+                    </div>                  
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- End of portfolio section -->
+      <section id="community_activities" class="section" data-reveal>
+        <div class="container text-center">
+            <!-- <h6 class="subtitle">Portfolio</h6> -->
+            <h6 class="section-title mb-4">Community Activities</h6>
+            <!-- <p class="mb-5 pb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In alias dignissimos. <br> rerum commodi corrupti, temporibus non quam.</p> -->
+
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="img-wrapper" data-reveal data-lightbox data-caption="">
+                        <img src="assets/imgs/speaking/Presenting Mobile App in Delhi, India.jpg" alt="">
+                        <div class="overlay">
+                            <div class="overlay-infos">
+                                <h5>Presenting Mobile App in Delhi, India</h5>
+                                <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
+                                <a href="javascript:void(0)"><i class="ti-link"></i></a>
+                            </div>  
+                        </div>
+                    </div>
+                    <div class="img-wrapper" data-reveal data-lightbox data-caption="">
+                        <img src="assets/imgs/speaking/Presenting our VR app in Grammenphone HQ.jpg" alt="">
+                        <div class="overlay">
+                            <div class="overlay-infos">
+                                <h5>Presenting VR  360 app in Grammenphone HQ</h5>
+                                <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
+                                <a href="javascript:void(0)"><i class="ti-link"></i></a>
+                            </div>                              
+                        </div>
+                    </div> 
+                    <div class="img-wrapper" data-reveal data-lightbox data-caption="">
+                        <img src="assets/imgs/speaking/Speaking about Mobile App at South East University.jpg" alt="">
+                        <div class="overlay">
+                            <div class="overlay-infos">
+                                <h5>Speaking about Mobile App at South East University</h5>
+                                <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
+                                <a href="javascript:void(0)"><i class="ti-link"></i></a>
+                            </div>                              
+                        </div>
+                    </div>   
+                    <div class="img-wrapper" data-reveal data-lightbox data-caption="">
+                        <img src="assets/imgs/speaking/Speaking in Brac University.jpg" alt="">
+                        <div class="overlay">
+                            <div class="overlay-infos">
+                                <h5>Speaking at Brac University</h5>
+                                <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
+                                <a href="javascript:void(0)"><i class="ti-link"></i></a>
+                            </div>                              
+                        </div>
+                    </div>     
+                    <div class="img-wrapper" data-reveal data-lightbox data-caption="">
+                        <img src="assets/imgs/speaking/Speaking at Daffofil International Academy.JPG" alt="">
+                        <div class="overlay">
+                            <div class="overlay-infos">
+                                <h5>Speaking at Daffofil International Academy</h5>
+                                <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
+                                <a href="javascript:void(0)"><i class="ti-link"></i></a>
+                            </div>                              
+                        </div>
+                    </div>                 
+                </div>
+                <div class="col-sm-4">
+                    <div class="img-wrapper" data-reveal data-lightbox data-caption="">
+                        <img src="assets/imgs/speaking/Prize giving moment in DevFest.jpg" alt="">
+                        <div class="overlay">
+                            <div class="overlay-infos">
+                                <h5>Prize giving moment in DevFest</h5>
+                                <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
+                                <a href="javascript:void(0)"><i class="ti-link"></i></a>
+                            </div>  
+                        </div>
+                    </div>
+                    <div class="img-wrapper" data-reveal data-lightbox data-caption="">
+                        <img src="assets/imgs/speaking/Program Host Moment.jpg" alt="">
+                        <div class="overlay">
+                            <div class="overlay-infos">
+                                <h5>Program Host Moment</h5>
+                                <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
+                                <a href="javascript:void(0)"><i class="ti-link"></i></a>
+                            </div>                              
+                        </div>
+                    </div>
+                     <div class="img-wrapper" data-reveal data-lightbox data-caption="">
+                        <img src="assets/imgs/speaking/Speaking Google DevFest Event in My University.jpg" alt="">
+                        <div class="overlay">
+                            <div class="overlay-infos">
+                                <h5>Speaking at Google DevFest Event</h5>
+                                <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
+                                <a href="javascript:void(0)"><i class="ti-link"></i></a>
+                            </div>                              
+                        </div>
+                    </div>     
+                    <div class="img-wrapper" data-reveal data-lightbox data-caption="">
+                        <img src="assets/imgs/speaking/Talking on Firebase at UIU Lab.JPG" alt="">
+                        <div class="overlay">
+                            <div class="overlay-infos">
+                                <h5>Talking on Firebase at UIU Lab</h5>
+                                <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
+                                <a href="javascript:void(0)"><i class="ti-link"></i></a>
+                            </div>                              
+                        </div>
+                    </div>                    
+                </div>
+                <div class="col-sm-4">
+                    <div class="img-wrapper" data-reveal data-lightbox data-caption="">
+                        <img src="assets/imgs/speaking/Program Host Moment 2.jpg" alt="">
+                        <div class="overlay">
+                            <div class="overlay-infos">
+                                <h5>Program Host Moment 2</h5>
+                                <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
+                                <a href="javascript:void(0)"><i class="ti-link"></i></a>
+                            </div>  
+                        </div>
+                    </div>
+                    
+                    <div class="img-wrapper" data-reveal data-lightbox data-caption="">
+                        <img src="assets/imgs/speaking/Speaking about mobile app in State University.jpg" alt="">
+                        <div class="overlay">
+                            <div class="overlay-infos">
+                                <h5>Speaking about mobile app in State University</h5>
+                                <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
+                                <a href="javascript:void(0)"><i class="ti-link"></i></a>
+                            </div>                              
+                        </div>
+                    </div> 
+                    <div class="img-wrapper" data-reveal data-lightbox data-caption="">
+                        <img src="assets/imgs/speaking/Speaking about Technical Course Curriculam in BTEB.jpg" alt="">
+                        <div class="overlay">
+                            <div class="overlay-infos">
+                                <h5>Speaking about Technical Course Curriculam in BTEB</h5>
+                                <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
+                                <a href="javascript:void(0)"><i class="ti-link"></i></a>
+                            </div>                              
+                        </div>
+                    </div> 
+                     
+                          
+                    <div class="img-wrapper" data-reveal data-lightbox data-caption="">
+                        <img src="assets/imgs/speaking/Speaking in ULAB University, Google Women Techmakers Program.jpg" alt="">
+                        <div class="overlay">
+                            <div class="overlay-infos">
+                                <h5>Women Techmakers Program at ULAB</h5>
+                                <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
+                                <a href="javascript:void(0)"><i class="ti-link"></i></a>
+                            </div>                              
+                        </div>
+                    </div>                  
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- About section -->
+    <section id="about" class="section mt-3" data-reveal>
+        <div class="container mt-5">
+            <div class="row text-center text-md-left">
+                <div class="col-md-3">
+                    <img src="assets/imgs/avatar.jpg" alt="" class="img-thumbnail mb-4">
+                </div>
+                <div class="pl-md-4 col-md-9">
+                    <h6 class="title">Touhid Swapon</h6>
+                    <!-- <p class="subtitle">UI/UX Designer</p> -->
+                    <p>With 10+ years in mobile app development (Android → cross-platform), I blend technical depth with leadership—guiding teams, driving strategic innovation and mentoring professionals stuck in career confusion. I specialize in helping lost talents find clarity, upskill strategically, and transition into impactful tech roles.<br><br>Passionate about ethical tech, privacy-aware solutions, and community building.<br><br>Beyond code: Fitness enthusiast, voice-over artist, and advocate for discipline fueling excellence. ECE background, lifelong learner, and aspiring tech leader focused on purposeful impact.</p>
+                    <!-- <button class="btn btn-primary rounded mt-3">DOWNLOAD CV</button>                    -->
+                </div>
+            </div>
+        </div>
+    </section>
+ 
+    <!-- Service section -->
+<section id="service" class="section" data-reveal>
+    <div class="container text-center">
+        <h6 class="subtitle">Service</h6>
+        <h6 class="section-title mb-4">What I Do</h6>
+        <p class="mb-5 pb-4">I offer professional services that leverage my technical expertise and communication skills to help others grow and create impactful solutions.</p>
+
+        <div class="row">
+            <!-- Service 1 -->
+            <div class="col-sm-6 col-md-3 mb-4">
+                <div class="custom-card card border" data-reveal>
+                    <div class="card-body">
+                        <i class="icon ti-user"></i>  <!-- Changed icon to user for mentoring -->
+                        <h5>Mentorship</h5>
+                        <p class="small text-muted">Guiding aspiring individuals</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Service 2 -->
+            <div class="col-sm-6 col-md-3 mb-4">
+                <div class="custom-card card border" data-reveal>
+                    <div class="card-body">
+                        <i class="icon ti-microphone"></i>  <!-- Microphone icon for hosting -->
+                        <h5>Event Host</h5>
+                        <p class="small text-muted">Tech conferences & community events</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Service 3 -->
+            <div class="col-sm-6 col-md-3 mb-4">
+                <div class="custom-card card border" data-reveal>
+                    <div class="card-body">
+                        <i class="icon ti-volume"></i>  <!-- Volume icon for voice work -->
+                        <h5>Voice Over</h5>
+                        <p class="small text-muted">Professional narration services</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Service 4 -->
+            <div class="col-sm-6 col-md-3 mb-4">
+                <div class="custom-card card border" data-reveal>
+                    <div class="card-body">
+                        <i class="icon ti-mobile"></i>  <!-- Mobile icon for app dev -->
+                        <h5>Mobile App Development</h5>
+                        <p class="small text-muted">Android & cross-platform solutions</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- End of Sectoin -->
     <!-- Skills section -->
     <!-- <section class="section">
         <div class="container text-center">
@@ -356,247 +551,6 @@
         </div>
     </section> -->
     <!-- End of Skills sections -->
-
-    <!-- Portfolio section -->
-    <section id="portfolio" class="section">
-        <div class="container text-center">
-            <!-- <h6 class="subtitle">Community Activities & Awards</h6> -->
-            <h6 class="section-title mb-4">Awards</h6>
-            <!-- <p class="mb-5 pb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In alias dignissimos. <br> rerum commodi corrupti, temporibus non quam.</p> -->
-
-            <div class="row">
-                <div class="col-sm-4">
-                    <div class="img-wrapper">
-                        <img src="assets/imgs/award/Speaker Appreciation in Mobicon Event.jpg" alt="">
-                        <div class="overlay">
-                            <div class="overlay-infos">
-                                <h5>Speaker Appreciation in Mobicon Event</h5>
-                                <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
-                                <a href="javascript:void(0)"><i class="ti-link"></i></a>
-                            </div>  
-                        </div>
-                    </div>
-                    <div class="img-wrapper">
-                        <img src="assets/imgs/award/Receiving 1st position prize from District Commisionar.jpg" alt="">
-                        <div class="overlay">
-                            <div class="overlay-infos">
-                                <h5>Receiving app development wining prize from District Commisionar</h5>
-                                <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
-                                <a href="javascript:void(0)"><i class="ti-link"></i></a>
-                            </div>                              
-                        </div>
-                    </div>                  
-                </div>
-                <div class="col-sm-4">
-                    <div class="img-wrapper">
-                        <img src="assets/imgs/award/Moment of Receiving World Summit Award in Delhi, India.jpg" alt="">
-                        <div class="overlay">
-                            <div class="overlay-infos">
-                                <h5>Moment of Receiving World Summit Award in Delhi, India</h5>
-                                <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
-                                <a href="javascript:void(0)"><i class="ti-link"></i></a>
-                            </div>  
-                        </div>
-                    </div>
-                     <div class="img-wrapper">
-                        <img src="assets/imgs/speaking/With honourable speaker.jpg" alt="">
-                        <div class="overlay">
-                            <div class="overlay-infos">
-                                <h5>Moment of Receiving World Summit Award in Delhi, India</h5>
-                                <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
-                                <a href="javascript:void(0)"><i class="ti-link"></i></a>
-                            </div>  
-                        </div>
-                    </div>
-                    <div class="img-wrapper">
-                        <img src="assets/imgs/award/Receiving best volunteer award.jpg" alt="">
-                        <div class="overlay">
-                            <div class="overlay-infos">
-                                <h5>Receiving best volunteer award</h5>
-                                <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
-                                <a href="javascript:void(0)"><i class="ti-link"></i></a>
-                            </div>                              
-                        </div>
-                    </div>                  
-                </div>
-                <div class="col-sm-4">
-                    <div class="img-wrapper">
-                        <img src="assets/imgs/award/Speaker Appreciation in Mobicon Event.jpg" alt="">
-                        <div class="overlay">
-                            <div class="overlay-infos">
-                                <h5>A token of Appreciation</h5>
-                                <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
-                                <a href="javascript:void(0)"><i class="ti-link"></i></a>
-                            </div>  
-                        </div>
-                    </div>
-                    <div class="img-wrapper">
-                        <img src="assets/imgs/award/VR App Award.jpg" alt="">
-                        <div class="overlay">
-                            <div class="overlay-infos">
-                                <h5>VR App Award</h5>
-                                <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
-                                <a href="javascript:void(0)"><i class="ti-link"></i></a>
-                            </div>                              
-                        </div>
-                    </div>                  
-                </div>
-            </div>
-
-        </div>
-    </section>
-    <!-- End of portfolio section -->
-      <section id="community_activities" class="section">
-        <div class="container text-center">
-            <!-- <h6 class="subtitle">Portfolio</h6> -->
-            <h6 class="section-title mb-4">Community Activities</h6>
-            <!-- <p class="mb-5 pb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In alias dignissimos. <br> rerum commodi corrupti, temporibus non quam.</p> -->
-
-            <div class="row">
-                <div class="col-sm-4">
-                    <div class="img-wrapper">
-                        <img src="assets/imgs/speaking/Presenting Mobile App in Delhi, India.jpg" alt="">
-                        <div class="overlay">
-                            <div class="overlay-infos">
-                                <h5>Presenting Mobile App in Delhi, India</h5>
-                                <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
-                                <a href="javascript:void(0)"><i class="ti-link"></i></a>
-                            </div>  
-                        </div>
-                    </div>
-                    <div class="img-wrapper">
-                        <img src="assets/imgs/speaking/Presenting our VR app in Grammenphone HQ.jpg" alt="">
-                        <div class="overlay">
-                            <div class="overlay-infos">
-                                <h5>Presenting VR  360 app in Grammenphone HQ</h5>
-                                <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
-                                <a href="javascript:void(0)"><i class="ti-link"></i></a>
-                            </div>                              
-                        </div>
-                    </div> 
-                    <div class="img-wrapper">
-                        <img src="assets/imgs/speaking/Speaking about Mobile App at South East University.jpg" alt="">
-                        <div class="overlay">
-                            <div class="overlay-infos">
-                                <h5>Speaking about Mobile App at South East University</h5>
-                                <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
-                                <a href="javascript:void(0)"><i class="ti-link"></i></a>
-                            </div>                              
-                        </div>
-                    </div>   
-                    <div class="img-wrapper">
-                        <img src="assets/imgs/speaking/Speaking in Brac University.jpg" alt="">
-                        <div class="overlay">
-                            <div class="overlay-infos">
-                                <h5>Speaking at Brac University</h5>
-                                <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
-                                <a href="javascript:void(0)"><i class="ti-link"></i></a>
-                            </div>                              
-                        </div>
-                    </div>     
-                    <div class="img-wrapper">
-                        <img src="assets/imgs/speaking/Speaking at Daffofil International Academy.JPG" alt="">
-                        <div class="overlay">
-                            <div class="overlay-infos">
-                                <h5>Speaking at Daffofil International Academy</h5>
-                                <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
-                                <a href="javascript:void(0)"><i class="ti-link"></i></a>
-                            </div>                              
-                        </div>
-                    </div>                 
-                </div>
-                <div class="col-sm-4">
-                    <div class="img-wrapper">
-                        <img src="assets/imgs/speaking/Prize giving moment in DevFest.jpg" alt="">
-                        <div class="overlay">
-                            <div class="overlay-infos">
-                                <h5>Prize giving moment in DevFest</h5>
-                                <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
-                                <a href="javascript:void(0)"><i class="ti-link"></i></a>
-                            </div>  
-                        </div>
-                    </div>
-                    <div class="img-wrapper">
-                        <img src="assets/imgs/speaking/Program Host Moment.jpg" alt="">
-                        <div class="overlay">
-                            <div class="overlay-infos">
-                                <h5>Program Host Moment</h5>
-                                <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
-                                <a href="javascript:void(0)"><i class="ti-link"></i></a>
-                            </div>                              
-                        </div>
-                    </div>
-                     <div class="img-wrapper">
-                        <img src="assets/imgs/speaking/Speaking Google DevFest Event in My University.jpg" alt="">
-                        <div class="overlay">
-                            <div class="overlay-infos">
-                                <h5>Speaking at Google DevFest Event</h5>
-                                <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
-                                <a href="javascript:void(0)"><i class="ti-link"></i></a>
-                            </div>                              
-                        </div>
-                    </div>     
-                    <div class="img-wrapper">
-                        <img src="assets/imgs/speaking/Talking on Firebase at UIU Lab.JPG" alt="">
-                        <div class="overlay">
-                            <div class="overlay-infos">
-                                <h5>Talking on Firebase at UIU Lab</h5>
-                                <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
-                                <a href="javascript:void(0)"><i class="ti-link"></i></a>
-                            </div>                              
-                        </div>
-                    </div>                    
-                </div>
-                <div class="col-sm-4">
-                    <div class="img-wrapper">
-                        <img src="assets/imgs/speaking/Program Host Moment 2.jpg" alt="">
-                        <div class="overlay">
-                            <div class="overlay-infos">
-                                <h5>Program Host Moment 2</h5>
-                                <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
-                                <a href="javascript:void(0)"><i class="ti-link"></i></a>
-                            </div>  
-                        </div>
-                    </div>
-                    
-                    <div class="img-wrapper">
-                        <img src="assets/imgs/speaking/Speaking about mobile app in State University.jpg" alt="">
-                        <div class="overlay">
-                            <div class="overlay-infos">
-                                <h5>Speaking about mobile app in State University</h5>
-                                <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
-                                <a href="javascript:void(0)"><i class="ti-link"></i></a>
-                            </div>                              
-                        </div>
-                    </div> 
-                    <div class="img-wrapper">
-                        <img src="assets/imgs/speaking/Speaking about Technical Course Curriculam in BTEB.jpg" alt="">
-                        <div class="overlay">
-                            <div class="overlay-infos">
-                                <h5>Speaking about Technical Course Curriculam in BTEB</h5>
-                                <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
-                                <a href="javascript:void(0)"><i class="ti-link"></i></a>
-                            </div>                              
-                        </div>
-                    </div> 
-                     
-                          
-                    <div class="img-wrapper">
-                        <img src="assets/imgs/speaking/Speaking in ULAB University, Google Women Techmakers Program.jpg" alt="">
-                        <div class="overlay">
-                            <div class="overlay-infos">
-                                <h5>Women Techmakers Program at ULAB</h5>
-                                <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
-                                <a href="javascript:void(0)"><i class="ti-link"></i></a>
-                            </div>                              
-                        </div>
-                    </div>                  
-                </div>
-            </div>
-
-        </div>
-    </section>
-
     <!-- Testmonial Section -->
     <!-- <section id="testmonial" class="section">
         <div class="container text-center">
@@ -726,7 +680,7 @@
     <!-- End od Hire me section. -->
 
     <!-- Contact Section -->
-    <section id="contact" class="position-relative section">
+    <section id="contact" class="position-relative section" data-reveal>
         <div class="container text-center">
             <h6 class="subtitle">Contact</h6>
             <h6 class="section-title mb-4">Get In Touch With Me</h6>
@@ -810,6 +764,7 @@
 
     <!-- steller js -->
     <script src="assets/js/steller.js"></script>
+    <script src="assets/js/premium.js"></script>
 
 </body>
 </html>
